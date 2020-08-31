@@ -4,7 +4,11 @@ For years I have struggled with inaccurate information about terminal sessions i
 
 **INCOMPLETE**
 
-This is the first project in C# in many years. To that end this project is an incomplete work. There are no unit tests. Additionally, it is broken into a standalone library and a console app. I intend to create a GUI app as well. No telling when that will happen.
+This is my first project in C# in many years. To that end this project is an incomplete work. There are no unit tests and no logging. 
+
+**WHY TWO PROJECTS**
+
+The solution is broken into a standalone library and a console app which depends on the library. I separated the logic from the UI because I intend to create a GUI app as well. No telling when that will happen.
 
 This tool uses the following NuGet packages:
 - Cassia
