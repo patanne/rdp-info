@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rdp-info-lib", "rdp-info-lib\rdp-info-lib.csproj", "{FB2DE036-7DAC-41D2-8B9D-77E05E9BF6B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rdp-info", "rdp-info\rdp-info.csproj", "{482ABEF9-9B1E-48FC-A64C-D75B127A0B66}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB2DE036-7DAC-41D2-8B9D-77E05E9BF6B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB2DE036-7DAC-41D2-8B9D-77E05E9BF6B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB2DE036-7DAC-41D2-8B9D-77E05E9BF6B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB2DE036-7DAC-41D2-8B9D-77E05E9BF6B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{482ABEF9-9B1E-48FC-A64C-D75B127A0B66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{482ABEF9-9B1E-48FC-A64C-D75B127A0B66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{482ABEF9-9B1E-48FC-A64C-D75B127A0B66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{482ABEF9-9B1E-48FC-A64C-D75B127A0B66}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

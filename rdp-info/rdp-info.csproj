@@ -1,0 +1,67 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <RootNamespace>hb.app.rdpinfo</RootNamespace>
+        <LangVersion>9</LangVersion>
+        <PackageVersion>0.0.0</PackageVersion>
+        <AssemblyVersion>0.0.0</AssemblyVersion>
+        <OutputType>Exe</OutputType>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'debug-32' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <RuntimeIdentifier>win-x86</RuntimeIdentifier>
+        <PublishSingleFile>true</PublishSingleFile>
+        <SelfContained>true</SelfContained>
+        <DebugSymbols>true</DebugSymbols>
+        <DefineConstants>TRACE;DEBUG</DefineConstants>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'debug-64' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+        <PublishSingleFile>true</PublishSingleFile>
+        <SelfContained>true</SelfContained>
+        <DebugSymbols>true</DebugSymbols>
+        <DefineConstants>TRACE;DEBUG</DefineConstants>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'release-32' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <RuntimeIdentifier>win-x86</RuntimeIdentifier>
+        <PublishSingleFile>true</PublishSingleFile>
+        <SelfContained>true</SelfContained>
+        <DebugSymbols>false</DebugSymbols>
+        <DebugType>none</DebugType>
+        <DefineConstants>TRACE;RELEASE</DefineConstants>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'release-64' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+        <PublishSingleFile>true</PublishSingleFile>
+        <SelfContained>true</SelfContained>
+        <DebugSymbols>false</DebugSymbols>
+        <DebugType>none</DebugType>
+        <DefineConstants>TRACE;RELEASE</DefineConstants>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Develop' ">
+        <DebugSymbols Condition=" '$(DebugSymbols)' == '' ">true</DebugSymbols>
+        <Optimize Condition=" '$(Optimize)' == '' ">false</Optimize>
+        <DefineConstants>TRACE;DEBUG</DefineConstants>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\rdp-info-lib\rdp-info-lib.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Cassia" Version="2.0.0.60" />
+      <PackageReference Include="ConsoleTables" Version="2.4.2" />
+      <PackageReference Include="System.Diagnostics.EventLog" Version="4.7.0" />
+    </ItemGroup>
+
+</Project>

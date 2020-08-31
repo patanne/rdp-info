@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <RootNamespace>hb.app.rdpinfo.lib</RootNamespace>
+        <LangVersion>9</LangVersion>
+        <PackageVersion>0.0.0</PackageVersion>
+        <AssemblyVersion>0.0.0</AssemblyVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Cassia" Version="2.0.0.60" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="System.Diagnostics.EventLog, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+        <HintPath>..\rdp-info\bin\Debug\netcoreapp3.1\System.Diagnostics.EventLog.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>
