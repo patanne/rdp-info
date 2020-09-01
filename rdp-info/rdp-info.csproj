@@ -9,6 +9,7 @@
         <AssemblyVersion>0.0.0</AssemblyVersion>
         <OutputType>Exe</OutputType>
         <ApplicationIcon>rdp-desktop.ico</ApplicationIcon>
+        <Company>HelpBox</Company>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'debug-32' ">

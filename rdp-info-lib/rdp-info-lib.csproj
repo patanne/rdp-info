@@ -6,6 +6,7 @@
         <LangVersion>9</LangVersion>
         <PackageVersion>0.0.0</PackageVersion>
         <AssemblyVersion>0.0.0</AssemblyVersion>
+        <Company>HelpBox</Company>
     </PropertyGroup>
 
     <ItemGroup>
